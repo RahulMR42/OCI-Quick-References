@@ -1,0 +1,9 @@
+[Service]
+Type=simple
+Restart=always
+RestartSec=2
+WorkingDirectory=/home/opc/mistral-nemo
+ExecStart=bash bash_openai.sh
+User=opc
+[Install]
+WantedBy=multi-user.target

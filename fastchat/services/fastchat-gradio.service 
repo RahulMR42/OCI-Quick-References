@@ -1,0 +1,11 @@
+[Unit]
+Description=Service to start fastchat-openai
+[Service]
+Type=simple
+Restart=always
+RestartSec=2
+WorkingDirectory=/home/opc/fastchat/scripts
+ExecStart=bash fastchat-gradio.sh
+User=opc
+[Install]
+WantedBy=multi-user.target
